@@ -10,7 +10,7 @@ export class UsersService {
 
   constructor(private httpClient: HttpClient) { }
 
-  getUsers():Observable<any[]>{
+  getUsers():Observable<UsersModule[]>{
     return this.httpClient.get<UsersModule[]>('https://jsonplaceholder.typicode.com/users');
   }
 }
